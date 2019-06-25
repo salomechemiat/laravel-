@@ -52,16 +52,9 @@
     <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
      </div>
-     <select name="id">
-      @if(count($student)>0)
-        @foreach($student as $students)
-              <option name="id" class="form-control" value="{{$students->id}}">{{$students->id}}</option>
-               <span class="text-danger">{{ $errors->first('id') }}</span>
-        @endforeach
-      @endif
-      </select>
-       <!--  <input name="id" class="form-control" placeholder="Student id " type="text">
-        <span class="text-danger">{{ $errors->first('id') }}</span> -->
+    
+        <input name="id" class="form-control" placeholder="Student id " type="text">
+        <span class="text-danger">{{ $errors->first('id') }}</span>
     </div>
 
 
